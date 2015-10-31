@@ -1,0 +1,36 @@
+var hero = prompt("The world is being overtaken by an intelligent \
+race of aliens! We need YOUR HELP! However, you alone can not stop them! \
+Pick one of the following to help you! Batman, Superman or \
+Gary from Accounting!").toUpperCase();
+
+switch(hero) {
+    case'BATMAN':
+        var intelligent = prompt("Are you intelligent?").toUpperCase();
+        var cunning = prompt("Are you cunning?").toUpperCase();
+        if (intelligent === 'YES' || cunning === 'YES') {
+            console.log("Excellent, together we will save Gotham once again!");
+        } else {
+            console.log("I knew you were weak");
+        }
+        break;
+    case'SUPERMAN':
+        var strong = prompt("Are you strong enough?").toUpperCase();
+        var fast = prompt("Are you fast enough?").toUpperCase();
+        if (strong === 'YES' && fast === 'YES') {
+            console.log("Let's get to work.");
+        } else {
+            console.log("I need both qualities young man.");
+        }
+        break;
+    case'GARY':
+        var scared = prompt("Are you as scared as I am!?").toUpperCase();
+        var pay = prompt("I want one-thousand dollars if I'm helping you!").toUpperCase();
+        if (scared === 'YES' || pay === 'YES') {
+            console.log("Gary runs away. Looks like its just you kid.");
+        } else {
+            console.log("Gary gets zapped into dust before your very eyes.");
+        }
+        break;
+    default:
+        console.log("We all know that's not a real super hero!");
+}
