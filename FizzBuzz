@@ -1,0 +1,11 @@
+for (var i = 0; i < 15; i++){
+  if (i % 3 ==0){
+    alert('Fizz');
+  }
+  else if (i % 5 == 0){
+    alert('Buzz');
+  }
+  else (i % 3==0 || i % 5 ==0)
+    alert('FizzBuzz');
+}
+  
