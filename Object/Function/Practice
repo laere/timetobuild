@@ -1,0 +1,20 @@
+var Zack = {
+    firstname: 'Zack', 
+    lastname: 'Bostian',
+    address: {
+        street: '4567 Tabor Rd',
+        city: 'Comstock Park',
+        state: 'MI'
+    }
+};
+
+function greet(person){
+    console.log('Hi ' + person.firstname);
+}
+
+function retrieveState(person) {
+    console.log (person.firstname + ' is from ' + person.address.street);
+}
+
+retrieveState(Zack);
+greet(Zack);
