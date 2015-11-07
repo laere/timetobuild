@@ -45,7 +45,7 @@ function retrieveCityState(person) {
   console.log(' and resides in ' + person.address.city + ', ' + person.address.state);
 }
 
-//I want to make it so if I choose either, Zack, Bill, or Steve it will print their informatio//
+//I want to make it so if I enter either, Zack, Bill, or Steve, into the prompt, it will print their information
 if () {
   console.log(retrieveState(Zack) + retrieveCityState(Zack));
 }
