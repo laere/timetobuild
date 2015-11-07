@@ -35,6 +35,9 @@ function greet(person){
 function retrieveState(person) {
     console.log (person.firstname + ' is from ' + person.address.street);
 }
+function retrieveCityState(person) {
+  console.log(person.firstname + ' resides in ' + person.address.city + ', ' + person.address.state);
+}
 
 retrieveState(Zack);
 greet(Zack);
