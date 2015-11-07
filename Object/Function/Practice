@@ -58,3 +58,7 @@ else if () {
 else {
   console.log("That person is unavailable!");
 }
+
+
+//I am sure there are ways to make doing this easier, however, being new,
+//I am just working with what I've learned so far. Got to practice to get better!
