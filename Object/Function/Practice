@@ -8,6 +8,26 @@ var Zack = {
     }
 };
 
+var Steve = {
+  firstname: 'Steve',
+  lastname: 'Jobs',
+  address: {
+  	street: '1234 Apple Way',
+  	city: 'Appledom',
+  	state: 'CA'
+	}
+};
+
+var Bill = {
+  firstname: 'Bill',
+  lastname: 'Gates',
+  address: {
+    street: '5678 Microsoft Ave',
+    city: 'Windows',
+    state: 'FL'
+  }
+};
+
 function greet(person){
     console.log('Hi ' + person.firstname);
 }
