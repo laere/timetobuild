@@ -1,3 +1,7 @@
+//Prompting who's information is needed//
+prompt("Who's information do you need? Zack, Steve, or Bill's?");
+
+//Objects here//
 var Zack = {
     firstname: 'Zack', 
     lastname: 'Bostian',
@@ -27,7 +31,8 @@ var Bill = {
     state: 'FL'
   }
 };
-
+    
+//Functions used to retrieve information from objets Zack, Steve, Bill//
 function greet(person){
     console.log('Hi ' + person.firstname);
 }
@@ -35,8 +40,19 @@ function retrieveState(person) {
     console.log (person.firstname + ' is from ' + person.address.street);
 }
 function retrieveCityState(person) {
-  console.log(person.firstname + ' resides in ' + person.address.city + ', ' + person.address.state);
+  console.log(' and resides in ' + person.address.city + ', ' + person.address.state);
 }
 
-retrieveState(Zack);
-greet(Zack);
+//I want to make it so if I choose either, Zack, Bill, or Steve it will print their informatio//
+if () {
+  console.log(retrieveState(Zack) + retrieveCityState(Zack));
+}
+else if () {
+  console.log(retrieveState(Steve) + retrieveCityState(Steve));
+}
+else if () {
+  console.log(retrieveState(Bill) + retrieveCityState(Bill));
+}
+else {
+  console.log("That person is unavailable!");
+}
