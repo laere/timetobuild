@@ -31,7 +31,6 @@ var Bill = {
 function greet(person){
     console.log('Hi ' + person.firstname);
 }
-
 function retrieveState(person) {
     console.log (person.firstname + ' is from ' + person.address.street);
 }
