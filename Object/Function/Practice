@@ -1,3 +1,6 @@
+//I am sure there are ways to make doing this easier, however, being new,
+//I am just working with what I've learned so far. Got to practice to get better!
+
 //Prompting who's information is needed//
 prompt("Who's information do you need? Zack, Steve, or Bill's?");
 
@@ -60,5 +63,4 @@ else {
 }
 
 
-//I am sure there are ways to make doing this easier, however, being new,
-//I am just working with what I've learned so far. Got to practice to get better!
+
