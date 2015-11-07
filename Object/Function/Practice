@@ -8,7 +8,7 @@ var Zack = {
     address: {
         street: '5555 Timberwood Lane',
         city: 'Hotel',
-        state: 'MI'
+        state: 'OH'
     }
 };
 
