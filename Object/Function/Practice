@@ -32,10 +32,12 @@ var Bill = {
   }
 };
     
-//Functions used to retrieve information from objets Zack, Steve, Bill//
+//Just a basic function, input name log Hi + name. Just practice. 
 function greet(person){
     console.log('Hi ' + person.firstname);
 }
+
+//Functions used to retrieve information from objets Zack, Steve, Bill
 function retrieveState(person) {
     console.log (person.firstname + ' is from ' + person.address.street);
 }
