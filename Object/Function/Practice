@@ -6,7 +6,8 @@ var Zack = {
     firstname: 'Zack', 
     lastname: 'Doe',
     address: {
-        street: '5555 troub;estock Park',
+        street: '5555 Timberwood Lane',
+        city: 'Hotel',
         state: 'MI'
     }
 };
