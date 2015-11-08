@@ -1,0 +1,36 @@
+function a(){
+    console.log(this);
+    this.newvariable = 'hello';
+
+}
+
+var b = function() {
+    console.log(this);
+}
+
+a();
+
+console.log(newvariable);
+
+b();
+
+var c = {
+    name: 'The c object',
+    log: function(){
+        //var self set to 'this'//
+        //proper reference to object, c// 
+        //rather than global obj//
+        var self = this;
+        
+        self.name = 'Updated c object';
+        console.log(self);
+            //This function sets to the global object//
+            var setname = function(newname){
+                self.name = newname;
+        }
+            setname('Updated again, the c object!');
+            console.log(self);
+    }
+}
+
+c.log();
