@@ -1,0 +1,19 @@
+//Using IIFE's
+
+//Vars for first IIFE
+var name = 'Zack';
+var age = 26;
+
+//IIFE
+(function(age, name) {
+    var myAge = 'My age is';
+    var myName = 'and my name is';
+    console.log(myAge + ' ' + age + ' ' + myName + ' ' + name);
+}(age, name));
+
+//IIFE 
+(function(age, breed){
+    var myPet = 'My pet is ';
+    var myBreed = 'and is a';
+    console.log(myPet + ' ' + age + ' ' + myBreed + ' ' + breed);
+}(4, 'Goldenretriever'));
