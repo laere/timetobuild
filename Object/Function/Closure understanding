@@ -1,0 +1,37 @@
+//All credit goes to Anthony Alicea 
+//He has helped me understand closures and various other things
+//Although I am not that well versed yet, here is some code
+//and my notes explaining my understanding of said closure
+
+function buildFunctions2() {
+    //array - collection of anything
+    var arr = [];
+    //for loop
+    for (var i = 0; i < 3; i++) {
+        //.push, add item to an array
+        //pushing function j through an array
+        //function j returns a function logging j
+        //because we're calling i on function j.
+        //as function j gets pushed from 0 > 1 > 2
+        //the return function of j logs i as it is
+        //in that very moment.
+        arr.push(
+            //IIFE
+            (function(j) {
+                return function() {
+                    console.log(j);
+                }
+                
+            }(i))
+    
+       )
+    }
+    
+    return arr;
+}
+
+var fs2 = buildFunctions2();
+
+fs2[0]();
+fs2[1]();
+fs2[2]();
