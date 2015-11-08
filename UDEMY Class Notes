@@ -1,0 +1,57 @@
+//These are my class notes from Anthony Alicea's JS course
+//*All credit goes to Anthony ALicea for this material!*
+//These notes have been helping me memorize and understand JS
+//concepts and fundamentals!
+
+UDEMY Class Notes
+jQuery and Angular.js are just files you add to your JS code. Best to learn JS before any frameworks. 
+Syntax Parsers - a program that reads your code and determines what it does and if it's grammar/syntax is valid. 
+Lexical Environment - Where something sits physically in the code you write. Lexical - words/grammar/syntax. 
+Execution Context - A wrapper to help manage the code that is running. 
+
+Name/Value Pair =  a name which maps to a unique value. Name may be defined more than once, but can have one value in any given context. That value may be more name/value pairs. 
+Example:  Address = '100 Main st.'  Name/value pair.
+Object = collection of name/value pairs (JS).
+Execution Context (Global) - Global Object created and 'this'
+Hoisting - setup memory space for variables and functions. FOR VARIABLES, PUTS IT INTO MEMORY, AND SETS IT TO UNDEFINED BEFORE IT EXECUTES THE CODE!!!****
+
+Single Threaded - one command, executed at a time.
+Synchronous- one at a time. and in order!
+Invocation - running a function or calling a function.
+Variable Environemtn - where variables live, and how they relate to each other in memory.
+Scope - where a variable is available in your code. And if it's the same variable or a new copy. 
+Asynchronous- more than one at a time.
+Dynamic Typing -  you don't tell the JS engine what type of data a variable holds. The engine figures it out while your code is running. Variables can hold different types of values.
+Primitive Types - type of data that represents a single value. That is, not an object.
+	undefined - lack of existence (default value).
+	null - lack of existence, you can set variables to this.*
+	boolean - true or false.
+	number - Floating point number. Alway's some decimals. JS only has one type.
+	string - a sequence of characters. Can use "" and ''.
+	symbol - used in ES6.
+
+OPERATORS ARE FUNCTIONS!!!!!!!!!!!!!!!*****************
+Operator - a special function that is syntactically written differently. Operators take two paramaters and return one result.
+Operator Precedence - which operator get's called first. Operator Functions are called in order of precedence (HIGHER predence wins!)
+Operator Associativity - what order an operator get's called in. Left to right, or right to left. When operator functions have the same precedence
+PEMDAS!
+Coercion - converting a value from one type to another. Dynamically typed in JS
+true coerced -> 1
+false coerced -> 0
+null coerced -> 0
+Method - when a function is connected to an object.
+Namespace - A container for variables and functions. Keep variables and funcitons with the same name seperate.
+JSON - JavaScript Object Notation. More strict, easy transistion, when pushing data from client to the browser. 
+**IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!**
+First Class Functions: everything uou can do with other types you can do with functions. Assign them to variables, pass them around, create them on the fly.
+
+Function: Special type of object. Can attach primitive tpes, objects, other functions. 
+Doesn't have to have a name. Can be anonymous. 
+Code: The code that you write gets placed in a special property of the function object. Invocable (run this code).
+Expression: Unit of code that results in a value. FUNCTION EXPRESSIONS AREN'T HOISTED!!!
+Statement: Does work, doesn't return value.
+
+By Value vs By Reference: Variables
+Mutate: to change something
+Arguments - contains a list of all the values of all the parameters that you pass to a function. 
+Function overloading - having a function of the same name with different parameters. Doesn't work well in JS, because functions are objects.
