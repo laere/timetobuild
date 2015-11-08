@@ -35,3 +35,10 @@ var c = {
 }
 
 c.log();
+
+//'this' keyword is the global variable//
+//when invoking a function//
+//when the function is a method of an object//
+//the this key points to that object//
+//any internal functions, of that object have a problem//
+//so we can set a variable to 'this' to fix it.//
