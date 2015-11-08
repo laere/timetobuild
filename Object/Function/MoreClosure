@@ -1,0 +1,31 @@
+
+function place(state){
+    //return name of person residing in specific states
+    return function(firstname) {
+        
+        if (state === 'MI') {
+            console.log(firstname +  ' resides in the state of Michigan');
+        }
+        
+        if (state === 'CA') {
+            console.log(firstname +  ' resides in the state of California');
+        }
+        
+        if (state === 'FL') {
+            console.log(firstname +  ' resides in the state of Florida');
+        }
+    }
+}
+//variables that represent the global execution context.
+//variables call function place(); and return function object name();
+//parameter state is stored in memory after the execution context of these varables finish.
+var person = place('MI');
+var person2 = place('CA');
+var person3 = place('FL');
+
+//creates new execution context that referes to the memory of the ones before
+//this creates closure.
+
+person('Zack');
+person2('Steve');
+person3('Bill');
