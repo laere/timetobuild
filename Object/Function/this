@@ -1,3 +1,4 @@
+//Courtesy and credit to Anthony Alicea and his UDEMY class!!!//
 function a(){
     console.log(this);
     this.newvariable = 'hello';
