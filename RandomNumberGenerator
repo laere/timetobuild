@@ -1,0 +1,16 @@
+//A program that takes a number as user input and generates a number inbetween 1 and users input.
+
+//Receive user input
+var userNum = prompt('Enter a number here!');
+
+//Turn user input into an integer
+var number = parseInt(userNum);
+
+//Randomize from 1 to users input
+var randomNum = Math.floor(Math.random() * number) + 1;
+
+//create a message
+var message = '<h1>' + randomNum + ' is a number between 1 and ' + number + '!</h1>';
+
+//print results
+document.write(message);
