@@ -1,0 +1,13 @@
+//Mini program determines the cost of a users name. Each character = 5 dollars.
+
+//Receive user input, their name
+var name = prompt('Please enter your name here, and we will get you a price!');
+
+//Determine the length of the users name
+var nameLength = name.length;
+
+//Multiply the length of the users name by 5 per letter
+var total = nameLength * 5;
+
+//print results
+document.write('<h1> Your total is ' + total + ' dollars!</h1>');
