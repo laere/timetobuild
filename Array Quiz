@@ -1,0 +1,47 @@
+//Simple Quiz//
+
+/* Three Questions
+	 Two Dimensional Array
+   Loop through questions
+   Track how many user answered correctly
+   Output number of correct answers
+*/
+
+// Create the three questions
+var questions = [
+  ['How many legs do humans have?', 2],
+  ['How many letters are in the alphabet?', 26],
+  ['How many provinces are there in China?', 24]
+];
+
+
+// variables used to store data 
+var question;
+var answer;
+var response;
+var correctAnswers = 0;
+
+// function to print data
+function print(message) {
+  alert(message);
+}
+
+// Loop through the two dimensional array
+// Use the prompt function
+for (var i = 0; i < questions.length; i++) {
+  // store the looping of the questions
+  question = questions[i][0];
+  // store the looping of the answers
+  answer = questions[i][1];
+  // store the user response
+  // turn user response into an integer
+  response = parseInt(prompt(question));
+  	// create a conditional to determine
+  	// if the answer = user response
+  	if (answer === response) {
+      correctAnswers +=1;
+    }
+}
+
+print('You got ' + correctAnswers + ' question(s) correct!');
+
