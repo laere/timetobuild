@@ -1,0 +1,37 @@
+// Create a store
+// Create a list of items available
+// Create a search function
+// Print if an item is available
+// Print if an item isn't available
+
+// Variables 
+var search;
+var message = '';
+
+//print function
+function print(message) {
+  document.write(message);
+}
+
+//List of items
+var store = ['apple', 'pear', 'milk', 'bread', 'meat', 'frozen dinner', 'oranges', 'brocolli', 'shoes', 'pants', 'shirts', 'eggs', 'peanut butter'];
+
+
+// Create a search function
+// Allow user to quit loop
+while (true) {
+  search = prompt('Type an item to see if we have it in stock!');
+  if (search.toLowerCase === 'quit') {
+    break;
+  }
+  //loop through array of store items
+  for (var i = 0; i < store.length; i++){
+    if (search.toLowerCase() === store[i]) {
+      message = '<p>We do have ' + store[i] + ' in stock!</p>';
+      print(message);
+    }   else (search.toLowerCase()  !== store[i]) {
+          message = '<p>We do no have that item in stock!</p>';
+          print(message);
+    }
+  }
+}
