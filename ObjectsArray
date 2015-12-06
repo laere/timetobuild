@@ -1,0 +1,48 @@
+// Create an array, list of objects
+// Each array will hold an object
+// Each object will have 4 properties
+// Propertes = name, track, achievments, points
+// 5 student objects
+
+
+// Data structure of objects
+// five student objects in an array
+var students = [{
+  name: 'Zack',
+  track: 'JavaScript',
+  achievments: 20,
+  points: 4500
+}, {
+  name: 'Dave',
+  track: 'Ruby',
+  achievments: 5,
+  points: 2000
+}, {
+  name: 'Dan',
+  track: 'iOS',
+  achievments: 8,
+  points: 1500
+}, {
+  name: 'Tanya',
+  track: 'CSS',
+  achievments: 14,
+  points: 3500
+}, {
+  name: 'Beth',
+  track: 'HTML',
+  achievments: 2,
+  points: 800
+}];
+
+
+//log function to print data
+function log(message) {
+  console.log(message);
+}
+
+// use a for loop
+// print data to webpage
+for (var i = 0; i < students.length; i++) {
+  log(students[i].name);
+  log(students[i].track);
+  log(students[i].achievments);
